@@ -12,7 +12,7 @@ jobs:
         uses: marocchino/tool-versions-action@v1
         id: versions
       - name: Setup Elixir
-        uses: actions/setup-elixir@v1
+        uses: erlef/setup-beam@v1
         with:
           elixir-version: ${{ steps.versions.outputs.elixir }}
           otp-version: ${{ steps.versions.outputs.erlang }}
